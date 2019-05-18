@@ -10,12 +10,12 @@ public class Solution {
 
     static int[] rotLeft(int[] a, int n, int d) {
         int[] b = new int[n];
-        for(int i=0;in-d;i++)
+        for(int i=0;i<n-d;i++)
         {
             b[i] = a[d+i];
         }
         int l = 0;
-        for(int i=n-d;in;i++)
+        for(int i=n-d;i<n;i++)
         {
             b[i] = a[l++];
         }
